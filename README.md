@@ -2,8 +2,12 @@
 Predict Illusory Contour using Deep Neural Network (Keras implementation)
 
 ## Description
-Illusory Contour is one of the visual illusions.
-<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/result/AE_%E4%BA%94%E8%A7%92.png" width=100%>
+[Illusory Contour](https://en.wikipedia.org/wiki/Illusory_contours) is one of the visual illusions.
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/results/testset_hexagon.png" width=100%>
+
+### model
+Model is Autoencoder model
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/model.png" width=50%>
 
 ## Requirement
 ```
@@ -28,4 +32,4 @@ Test set result
 - Predicted
 - |Predicted - Input|
 
-<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/result/AE_%E4%BA%94%E8%A7%92.png" width=100%>
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/results/testset_hexagon.png" width=100%>
