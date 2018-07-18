@@ -3,6 +3,8 @@ Predict Illusory Contour using Deep Neural Network (Keras implementation)
 
 ## Description
 Illusory Contour is one of the visual illusions.
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/result/AE_%E4%BA%94%E8%A7%92.png" width=100%>
+
 ## Requirement
 ```
 Python == 3.6
