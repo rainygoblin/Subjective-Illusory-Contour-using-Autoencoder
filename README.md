@@ -17,11 +17,9 @@ tqdm >= 4.23
 
 ## Result
 ### Learning Curve
-<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/LearningCurve.png" width=50%>
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/LearningCurve.png" width=50%>  
 ### Output  
-
 Test set result  
-
 - Input
 - Ground truth
 - Predicted
