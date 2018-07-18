@@ -3,7 +3,7 @@ Predict Illusory Contour using Deep Neural Network (Keras implementation)
 
 ## Description
 [Illusory Contour](https://en.wikipedia.org/wiki/Illusory_contours) is one of the visual illusions.
-<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/Kanizsa's%20Triangle.png" width=100%>
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/Kanizsa's%20Triangle.png" width=10%>
 
 ### model
 Model is Autoencoder model  
