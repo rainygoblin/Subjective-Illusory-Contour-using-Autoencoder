@@ -7,16 +7,15 @@ Predict Illusory Contour using Deep Neural Network (Keras implementation)
 
 ### model
 Model is Autoencoder model  
-<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/model.png" width=10%>
+<img src="https://github.com/takyamamoto/Subjective-Illusory-Contour-using-Autoencoder/blob/master/imgs/model.png" width=20%>
 
 ## Requirement
-```
-Python == 3.6
-Keras >= 2.0
-Tensorflow >= 1.8
-OpenCV >= 3.4
-tqdm >= 4.23
-```
+- Python == 3.6
+- Keras >= 2.0
+- Tensorflow >= 1.8
+- OpenCV >= 3.4
+- tqdm
+
 ## Usage
 1. Run `generate_data.py`
 1. Run `train_autoencoder.py`

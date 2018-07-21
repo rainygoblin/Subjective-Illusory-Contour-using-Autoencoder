@@ -22,7 +22,7 @@ from keras.utils import plot_model
 def autoencoder(input_size = (64,64,1), depth = 3):
 
     inputs = Input(input_size)
-    current_layer = inputs #forループ中でレイヤ名を保存する変数
+    current_layer = inputs
 
     # add levels with max pooling
     for layer_depth in range(depth):
@@ -36,7 +36,7 @@ def autoencoder(input_size = (64,64,1), depth = 3):
             current_layer = layer2
 
     # add levels with up-sampling
-    for layer_depth in range(depth-2, -1, -1):   #depth-2から0まで-1ずつ減る
+    for layer_depth in range(depth-2, -1, -1):   #depth-2 to 0
         n_filters = 64*(2**layer_depth)
         up = Conv2D(n_filters, 2, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(UpSampling2D(size = (2,2))(current_layer))
         current_layer = Conv2D(n_filters, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(up)
@@ -54,13 +54,13 @@ def autoencoder(input_size = (64,64,1), depth = 3):
 
 def load_data():
     #preprocessing
-    # フォルダの中にある画像を順次読み込む
+    # Load images
     Kanizsa_X = np.zeros((27200, 64, 64, 1))
     Kanizsa_Y = np.zeros((27200, 64, 64, 1))
     Ehrenstein_X = np.zeros((9375, 64, 64, 1))
     Ehrenstein_Y = np.zeros((9375, 64, 64, 1))
 
-    # inputの画像
+    # input
     for n_img in range(27200):
         img = cv2.imread("./data/Kanizsa_X/Kanizsa_X_"+"{0:05d}".format(n_img)+".png",
                          cv2.IMREAD_GRAYSCALE)
@@ -73,7 +73,7 @@ def load_data():
         img = np.reshape(img, (-1, 64, 64, 1))
         Ehrenstein_X[n_img] = img
 
-    # outputの画像
+    # output
     for n_img in range(27200):
         img = cv2.imread("./data/Kanizsa_Y/Kanizsa_Y_"+"{0:05d}".format(n_img)+".png",
                          cv2.IMREAD_GRAYSCALE)
